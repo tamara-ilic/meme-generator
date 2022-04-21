@@ -1,38 +1,112 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  margin: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+main {
+  padding: 2.25rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+header {
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+  color: #FFFFFF;
+  display: flex;
+  height: 4rem;
+  padding: 1.25rem;
 }
 
-.App-link {
-  color: #61dafb;
+.header--logo {
+  width: 2rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header--title {
+  font-family: 'Karla', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: -0.1em;
+  margin-left: 0.5rem;
+  margin-right: auto;
+}
+
+.header--project {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.75rem;
+}
+
+.form--inputs {
+  display: flex;
+  justify-content: space-between;
+  width: 100;
+}
+
+.form--inputs > input {
+  border: 1px solid #D5D4D8;
+  border-radius: 5px;
+  font-family: 'Karla', sans-serif;
+  height: 2.2rem;
+  padding-left: 0.75rem;
+  width: 14.4rem;
+}
+
+.form--button {
+  background: linear-gradient(90.41deg, #711F8D 1.14%, #A818DA 100%);
+  border-radius: 5px;
+  color: #FFFFFF;
+  font-family: 'Karla', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  height: 2.5rem;
+  letter-spacing: -0.1em;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.form--button_emoji {
+  margin-left: 0.25rem;
+}
+
+.meme {
+  margin-top: 2.25rem;
+  position: relative;
+}
+
+.meme--text {
+  color: #FFFFFF;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 2em;
+  font-weight: 900;
+  left: 50%;
+  letter-spacing: 1px;
+  margin: 1rem 0;
+  position: absolute;
+  text-align: center;
+  text-shadow:
+        2px 2px 0 #000,
+        -2px -2px 0 #000,
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        0 2px 0 #000,
+        2px 0 0 #000,
+        0 -2px 0 #000,
+        -2px 0 0 #000,
+        2px 2px 5px #000;
+  text-transform: uppercase;
+  transform: translateX(-50%);
+  width: 80%;
+}
+
+.top {
+  top: 0;
+}
+
+.bottom {
+  bottom: 0;
+}
+
+.meme--image {
+  width: 100%;
 }
