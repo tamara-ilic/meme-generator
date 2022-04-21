@@ -1,11 +1,10 @@
 import { useEffect, useState } from 'react'
-import memesData from '../memesData'
 
 export default function Meme() {
     const [meme, setMeme] = useState({
-        topText: "test",
-        bottomText: "bottom test",
-        randomImage: "http://i.imgflip.com/1bij.jpg" 
+        topText: 'test',
+        bottomText: 'bottom test',
+        randomImage: 'http://i.imgflip.com/1bij.jpg' 
     })
 
     const [allMemes, setAllMemes] = useState([])
@@ -52,7 +51,9 @@ export default function Meme() {
                         placeholder='Bottom text'
                     />
                 </div>
-                <button onClick={getMemeImage} className='form--button'>Get a new meme image<span className='form--button_emoji'>🖼️</span></button>
+                <button onClick={getMemeImage} className='form--button'>
+                    Get a new meme image<span className='form--button_emoji'>🖼️</span>
+                </button>
                
                 <div className='meme'>
                     <img src={meme.randomImage} alt='' className='meme--image' />
